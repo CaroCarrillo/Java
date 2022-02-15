@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ManageExceptions {
+	public void printDivide() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Escribe el primer número");
+		int a = scanner.nextInt();
+
+		System.out.print("Escribe el segundo número");
+		int b = scanner.nextInt();
+		
+		System.out.println("El resultado de l división es: " + (a/b));
+		}//printDivide
+}//class ManageExceptions

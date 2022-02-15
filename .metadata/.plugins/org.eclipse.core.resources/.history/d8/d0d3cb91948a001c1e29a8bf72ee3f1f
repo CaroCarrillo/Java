@@ -1,0 +1,29 @@
+
+public class testPerson {
+
+	public static void main(String[] args) {
+		Person alonso = null;
+	try {
+		Employee briana = new Employee("Briana", "Valencia", 20, "briana.valencia@generation.org", "Mentoría",120);
+		System.out.println(briana.calculateSalary());
+		System.out.println(briana);
+		
+		Manager rufs = new Manager ("Rufino", "Tamayo", 50, "elrufs@gmail.com", "Logística", 1500.0, 20, 0.25f);
+		System.out.println(rufs.calculateSalary());
+		System.out.println(rufs);
+		
+		alonso = new Person ("Alonso", "Grajeda", 15, "alonso.grajeda@generation.org");
+		alonso.setFirstName("Alonso Ignacio");
+		alonso.setAge(16);
+		alonso.setFirstName("alonsoenyahooocommx");
+		
+	}catch (EmailFormatException e) {
+		System.out.println(e.getMessage());
+	}finally {
+			System.out.println(alonso);
+			//System.out.println(alonso.getFirstName());
+			//System.out.println(alonso.getAge());
+			//System.out.println(alonso.getEmail());
+		}//catch
+	}//main
+}//class testPerson

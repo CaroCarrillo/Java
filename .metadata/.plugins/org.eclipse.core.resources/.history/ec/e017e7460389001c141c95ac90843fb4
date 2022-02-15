@@ -1,0 +1,9 @@
+
+public class Employee {
+	//Propiedades
+	String firstName;
+	String lastName;
+	int age;
+	String RFC;
+	double salary;
+}//class Employee

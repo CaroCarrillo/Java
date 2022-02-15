@@ -1,0 +1,21 @@
+
+public class testPerson {
+
+	public static void main(String[] args) {
+		Person alonso = null;
+		try {
+		alonso = new Person ("Alonso", "Grajeda", 15, "alonso.grajeda@generation.org");
+		alonso.setFirstName("Alonso Ignacio");
+		alonso.setFirstName("alonsoenyahooocommx");
+		alonso.setAge(16);
+		
+		}catch (EmailFormatException e) {
+			System.out.println(e.getMessage());
+		}finally {
+			System.out.println(alonso);
+			//System.out.println(alonso.getFirstName());
+			//System.out.println(alonso.getAge());
+			//System.out.println(alonso.getEmail());
+		}//catch
+	}//main
+}//class testPerson

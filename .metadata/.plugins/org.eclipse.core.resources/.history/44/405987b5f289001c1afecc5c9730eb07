@@ -1,0 +1,17 @@
+
+public class testPerson {
+
+	public static void main(String[] args) {
+		try {
+		Person alonso = new Person ("Alonso", "Grajeda", 15, "alonso.grajeda@generation.org");
+		alonso.email = "alonsoenyahooocommx";
+		alonso.age =15;
+		System.out.println(alonso.age);
+		System.out.println(alonso.email);
+		
+		}catch (EmailFormatException e) {
+			System.out.println(e.getMessage());
+		}//catch
+	}//main
+
+}//class testPerson

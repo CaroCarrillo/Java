@@ -1,0 +1,15 @@
+
+public class testEmployee {
+	public static void main(String[] args) {
+		
+		Employee Leonora = new Employee("Carolina", "Carrillo");
+		
+		Leonora.firstName = "Carolina";
+		Leonora.lastName = "Carrillo";
+
+		System.out.println(Leonora.firstName + ""+ Leonora.lastName);
+
+		
+	}//main
+	
+}//class testEmployee

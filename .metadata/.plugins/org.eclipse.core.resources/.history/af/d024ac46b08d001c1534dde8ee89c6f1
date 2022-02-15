@@ -1,0 +1,16 @@
+
+public class Calculator {
+	public int sum(int a, int b) {
+		return a+b;
+	}//sum
+	
+	public int mult(int a, int b) {
+		return a*b;
+	}//mult
+	
+	public float getPI() {
+		return 3.14159f;
+	}//getPI
+
+}//class Calculator
+

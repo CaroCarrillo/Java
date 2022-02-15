@@ -1,0 +1,25 @@
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Person {
+	String firstName;
+	String lastName;
+	int age;
+	String email;
+	
+	public Person(String firstName, String lastName, int age, String email) 
+		throws EmailFormatException{
+		super();
+		this.firstName = firstName.toUpperCase();;
+		this.lastName = lastName.toUpperCase();
+		this.age = (age<18)?18:age;
+		Pattern pattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$");
+		Matcher m = pattern.matcher(email);
+		if (m.matches() ) {
+			this.email = email;
+		}else {
+			throw new EmailFormatException("El formato dell correo electrónico es incorrecto");//lanzar una excepción EmailFormatException
+		}//else
+	}//constructor
+}//class person

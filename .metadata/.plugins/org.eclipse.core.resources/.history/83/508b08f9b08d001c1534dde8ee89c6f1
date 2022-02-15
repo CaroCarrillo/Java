@@ -1,0 +1,20 @@
+
+public class Calculator {
+	public int sum(int a, int b) {
+		return a+b;
+	}//sum
+	
+	public int mult(int a, int b) {
+		return a*b;
+	}//mult
+	
+	public float getPI() {
+		return 3.141592f;
+	}//getPI
+	
+	public String getStrPI() {
+		return "3.141592";
+	}//getStrPI
+
+}//class Calculator
+

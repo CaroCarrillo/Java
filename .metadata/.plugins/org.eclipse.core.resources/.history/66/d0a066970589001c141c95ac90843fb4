@@ -1,0 +1,26 @@
+
+public class Employee {
+	//Propiedades
+	String firstName;
+	String lastName;
+	int age;
+	String RFC;
+	double salary;
+	//ArrayList<String> lista;
+	public Employee(String firstName, String lastName, int age, String rFC, double salary) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.RFC = RFC;
+		this.salary = salary;
+	
+	}//constructor
+	public void calculateSalary() {
+		System.out.println(this.salary*21);
+	}//calculateSalary
+	
+	public void calculateSalaryDays(int days) {
+		System.out.println(this.salary * days);
+	}
+}//class Employee
